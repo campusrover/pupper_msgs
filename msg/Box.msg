@@ -2,7 +2,7 @@ string label
 
 float32 score
 
-uint8 xmin
-uint8 ymin
-uint8 xmax
-uint8 ymax
+int16 xmin
+int16 ymin
+int16 xmax
+int16 ymax
