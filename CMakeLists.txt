@@ -8,9 +8,9 @@ project(pupper_msgs)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  geometry_msgs
   message_generation
   std_msgs
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -106,9 +106,9 @@ add_message_files(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  LIBRARIES pupper_msgs
+  # LIBRARIES pupper_msgs
   CATKIN_DEPENDS geometry_msgs std_msgs message_runtime
-  DEPENDS system_lib
+  # DEPENDS system_lib
 )
 
 ###########
@@ -117,10 +117,10 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-include_directories(
+# include_directories(
 # include
-  ${catkin_INCLUDE_DIRS}
-)
+#   ${catkin_INCLUDE_DIRS}
+# )
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
